@@ -1,0 +1,19 @@
+{
+    "name": "PreimeiroCrud",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+
+    "authors": [
+        {
+            "name": "Lucas Lacerda",
+            "email": "lucaslacerdaandrey@gmail.com"
+        }
+    ],
+
+    "require": {
+        "google/apiclient": "^2.15"
+    }
+}

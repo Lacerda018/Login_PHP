@@ -1,0 +1,213 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+body{
+    color: #000;
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+}
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 1.7;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #57b846;
+}
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login100-pic {
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.login100-pic img {
+    max-width: 100%;
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.container-login100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login100-form-btn {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+
+    width: 27%;
+    height: 50px;
+    border-radius: 25px;
+    background: #ba75ff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+    background: blueviolet;
+}
+.wrap-login100 {
+    width: 960px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 130px 33px 95px;
+}
+
+.formulario{
+    background: blueviolet;
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    /*margin-top: 40px;*/
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+form{
+    margin: 0 auto;  
+}
+
+.form-control{
+    width: 500px;
+    margin-top: 5px;
+}
+
+label{
+    color: #fff;
+}
+
+input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .wrap-login100 {
+        padding: 177px 90px 33px 85px;
+    }
+
+    .login100-pic {
+        width: 35%;
+    }
+
+    .login100-form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-login100 {
+        padding: 100px 80px 33px 80px;
+    }
+
+    .login100-pic {
+        display: none;
+    }
+
+    .login100-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrap-login100 {
+        padding: 100px 15px 33px 15px;
+    }
+}
+
