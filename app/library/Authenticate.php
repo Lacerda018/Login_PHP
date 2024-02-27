@@ -7,16 +7,16 @@ use app\database\models\User;
 
 class Authenticate
 {
-    public function authGoogle($dataClass)
+    public function authGoogle($data)
     {
         $user = new User;
-        $userFound = $user->findBy('email', $dataClass->email);
+        $userFound = $user->findBy('email', $data->email);
         if(!$userFound){
             $user->insert([
-                'firstName'=>$dataClass->givenName,
-                'lastName'=>$dataClass->familyName,
-                'email'=>$dataClass->email,
-                'avatar'=>$dataClass->picture,
+                'firstName'=>$data->givenName,
+                'lastName'=>$data->familyName,
+                'email'=>$data->email,
+                'avatar'=>$data->picture,
             ]);
         }
 

@@ -7,10 +7,16 @@ use app\library\Authenticate;
 require '../vendor/autoload.php';
 
 $googleClient = new GoogleClient;
-$googleClient->init();
+try {
+    $googleClient->init();
+} catch (\Google\Exception $e) {
+}
 $auth = new Authenticate;
-if ($googleClient->authorized()) {
-    $auth->authGoogle($googleClient->getData());
+try {
+    if ($googleClient->authorized()) {
+        $auth->authGoogle($googleClient->getData());
+    }
+} catch (\Google\Service\Exception $e) {
 }
 
 if(isset($_GET['logout'])) {

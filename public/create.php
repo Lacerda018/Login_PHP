@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 
-$data = [
+/*$data = [
     'nome' => $_POST['nome'],
     'email' => $_POST['email'],
     'senha' => password_hash($_POST['senha'], PASSWORD_DEFAULT)
@@ -40,8 +40,7 @@ $usuariosAtuaisArray[] = $data;
 
 if (file_put_contents(sprintf('%s/users.json', __DIR__), json_encode($usuariosAtuaisArray))) {
     echo "Cadastro efetuado com sucesso!";
-}
-
+}*/
 ?>
 
 <!DOCTYPE html>
