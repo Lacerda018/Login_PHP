@@ -17,6 +17,7 @@ class User extends Model
             $prepare = $connect->prepare("insert into $this->table(firstName,lastName,avatar,email) 
                 values(:firstName,:lastName,:avatar,:email)");
 
+
             return $prepare->execute($data);
         } catch (\PDOException $th) {
             var_dump($th->getMessage());

@@ -13,7 +13,7 @@ abstract class Model
         try {
             $connect = Connect::connect();
             $prepare = $connect->prepare("select * from $this->table where
-            $field = :$field");
+            $field =:$field");
             $prepare->execute([
                 $field => $value,
             ]);
