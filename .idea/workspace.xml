@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a7bb996-6336-4d2e-be88-787cb34dc13e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/Connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/GoogleClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/GoogleClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/users.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;Lacerda018&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;Lacerda018&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="55293263-f355-47ea-8003-11c3c9ff0429" />
+        <option name="url" value="https://github.com/Lacerda018/PrimeiroCrud" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\Program Files (x86)\php-8.3.2-nts-Win32-vs16-x86\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap/css" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap/js" />
+    </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bV6qrofVr2z7NcCoiC5mWJvmI7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;PHP Script.GoogleClient.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.create.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;pcFirma&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Dev/testeCrudArquivo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;sqlite&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Dev\testeCrudArquivo\js" />
+      <recent name="C:\Users\User\Desktop\Dev\testeCrudArquivo\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Dev\testeCrudArquivo\public" />
+      <recent name="C:\Users\User\Desktop\Dev\testeCrudArquivo\css" />
+      <recent name="C:\Users\User\Desktop\Dev\testeCrudArquivo" />
+      <recent name="C:\Users\User\Desktop\Dev\testeCrudArquivo\app\library" />
+      <recent name="C:\Users\User\Desktop\Dev\testeCrudArquivo\app\database" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a7bb996-6336-4d2e-be88-787cb34dc13e" name="Changes" comment="" />
+      <created>1706288094144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706288094144</updated>
+      <workItem from="1706288095923" duration="6006000" />
+      <workItem from="1706524749834" duration="15073000" />
+      <workItem from="1706610507140" duration="1558000" />
+      <workItem from="1706627925312" duration="2875000" />
+      <workItem from="1706695516282" duration="9177000" />
+      <workItem from="1706781883235" duration="2182000" />
+      <workItem from="1706874900702" duration="4043000" />
+      <workItem from="1706903649239" duration="791000" />
+      <workItem from="1707141011007" duration="597000" />
+      <workItem from="1707217991255" duration="1233000" />
+      <workItem from="1707302506201" duration="4428000" />
+      <workItem from="1707334073515" duration="248000" />
+      <workItem from="1707334405042" duration="1203000" />
+      <workItem from="1707399341736" duration="12912000" />
+      <workItem from="1707476066670" duration="10441000" />
+      <workItem from="1707910025456" duration="5646000" />
+      <workItem from="1707995019974" duration="8813000" />
+      <workItem from="1708009644950" duration="11213000" />
+      <workItem from="1708440723121" duration="660000" />
+      <workItem from="1708525404246" duration="1489000" />
+      <workItem from="1708617529064" duration="1920000" />
+      <workItem from="1708624728417" duration="1846000" />
+      <workItem from="1708687760466" duration="9423000" />
+      <workItem from="1708954215047" duration="8578000" />
+      <workItem from="1709031741321" duration="13234000" />
+      <workItem from="1709129908851" duration="5051000" />
+      <workItem from="1709144528975" duration="101000" />
+      <workItem from="1709144784450" duration="1371000" />
+      <workItem from="1709316930992" duration="2296000" />
+      <workItem from="1709565812549" duration="2440000" />
+      <workItem from="1709582382246" duration="18000" />
+      <workItem from="1709663009114" duration="5000" />
+      <workItem from="1710254175485" duration="1977000" />
+      <workItem from="1710442458895" duration="1566000" />
+      <workItem from="1710788172833" duration="2013000" />
+      <workItem from="1710857086230" duration="12000" />
+      <workItem from="1711018844593" duration="600000" />
+      <workItem from="1711479912244" duration="5000" />
+      <workItem from="1711481112639" duration="155000" />
+      <workItem from="1711630478412" duration="3000" />
+      <workItem from="1711997921958" duration="2000" />
+      <workItem from="1712062554828" duration="6000" />
+      <workItem from="1712087437246" duration="5000" />
+      <workItem from="1712144180244" duration="5160000" />
+      <workItem from="1712154572144" duration="3433000" />
+      <workItem from="1712225824940" duration="8837000" />
+      <workItem from="1712319820595" duration="598000" />
+      <workItem from="1712602658906" duration="600000" />
+      <workItem from="1712861449446" duration="2000" />
+      <workItem from="1712930157794" duration="709000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
