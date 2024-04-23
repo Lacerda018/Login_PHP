@@ -1,8 +1,41 @@
 <?php
+// session_start();
+
+// use app\library\GoogleClient;
+// use app\library\Authenticate;
+
+// require '../vendor/autoload.php';
+
+// $googleClient = new GoogleClient;
+// try {
+//         $googleClient->init();
+//         } catch (\Google\Exception $e) {
+//     }
+//     $auth = new Authenticate;
+//     try {
+//         if ($googleClient->authorized()) {
+//             $auth->authGoogle($googleClient->getData());
+//         }
+//     } catch (\Google\Service\Exception $e) {
+//     }
+//     try{
+//         if(isset($authUser)){            
+//             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//                 $authInstance->authUser();
+//             }
+            
+//         }
+//     }catch (Exception){}
+
+// if(isset($_GET['logout'])) {
+//     $auth->logout();
+// }
+
+// $authUrl = $googleClient->generateAuthLink();
 session_start();
 
-use app\library\GoogleClient;
 use app\library\Authenticate;
+use app\library\GoogleClient;
 
 require '../vendor/autoload.php';
 
@@ -35,19 +68,20 @@ $authUrl = $googleClient->generateAuthLink();
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    Olá,
+    
+
+    <div class="limiter">
+        
+        <div class="container-login100">
+        Olá,
         <?php
             if(isset($_SESSION['user'], $_SESSION['auth'])):
                 echo $_SESSION['user']->firstName . ' ' . $_SESSION['user']->lastName;
-                ?>
-    <a href="?logout=true">Logout</a>
-        <?php else: ?>
-            Visitante
-        <?php endif ?>
-
-    <div class="limiter">
-        <div class="container-login100">
-
+        ?>  
+            <a href="?logout=true">Logout</a>
+                <?php else: ?>
+                    Visitante
+                <?php endif ?>
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
                     <img src="/Lacerda.png" alt="IMG">
@@ -70,9 +104,7 @@ $authUrl = $googleClient->generateAuthLink();
                         <a href="delete.php">Deletar</a>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -2,12 +2,12 @@
 
 require '../vendor/autoload.php';
 
-$data = [
+$userData = [
     'nome' => $_POST['nome'],
     'email' => $_POST['email'],
     'senha' => password_hash($_POST['senha'], PASSWORD_DEFAULT)
 ];
-
+/*
 $email = $_POST['email'];
 
 function emailExiste($email, $nomeArquivo)
@@ -40,8 +40,7 @@ $usuariosAtuaisArray[] = $data;
 
 if (file_put_contents(sprintf('%s/users.json', __DIR__), json_encode($usuariosAtuaisArray))) {
     echo "Cadastro efetuado com sucesso!";
-}
-
+}*/
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +48,7 @@ if (file_put_contents(sprintf('%s/users.json', __DIR__), json_encode($usuariosAt
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/style.css">
@@ -63,7 +63,7 @@ if (file_put_contents(sprintf('%s/users.json', __DIR__), json_encode($usuariosAt
         <div class="wrap-login100">
 
             <div class="formulario">
-                <form method="post" action="create.php" class="mb-3">
+                <form method="post" action="authenticate.php" class="mb-3">
                     <label for="nome" class="form-label ">Nome:</label>
                     <input type="text" name="nome" required class="form-control form-control-sm">
 
