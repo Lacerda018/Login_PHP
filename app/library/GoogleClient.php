@@ -3,20 +3,26 @@
 namespace app\library;
 
 use Google\Client;
+use Google\Service\Exception;
 use Google\Service\Oauth2 as ServiceOAuth2;
 use GuzzleHttp\Client as GuzzleClient;
 use Google\Service\Oauth2\Userinfo;
+
 class GoogleClient
 {
     public readonly Client $client;
 
-    private Userinfo $dataClass;
+    private Userinfo $data;
     public function __construct()
     {
         $this->client = new Client;
     }
 
-    public function init()
+
+    /**
+     * @throws \Google\Exception
+     */
+    public function init():void
     {
         $guzzleClient = new GuzzleClient(['curl' => [CURLOPT_SSL_VERIFYPEER => false]]);
         $this->client->setHttpClient($guzzleClient);
@@ -26,26 +32,32 @@ class GoogleClient
         $this->client->addScope('profile');
     }
 
-    public function authorized()
+    /**
+     * @throws Exception
+     */
+    public function authorized(): bool
     {
         if(isset($_GET['code'])){
             $token = $this->client->fetchAccessTokenWithAuthCode($_GET['code']);
             $this->client->setAccessToken($token['access_token']);
             $googleService = new ServiceOauth2($this->client);
-            $this->dataClass = $googleService->userinfo->get();
+            $this->data = $googleService->userinfo->get();
 
-           return true;
+            return true;
         }
 
         return false;
     }
 
-    public function getData()
+    /**
+     * @return Userinfo
+     */
+    public function getData(): Userinfo
     {
-        return $this->dataClass;
+        return $this->data;
     }
 
-    public function generateAuthLink()
+    public function generateAuthLink(): string
     {
         return $this->client->createAuthUrl();
     }

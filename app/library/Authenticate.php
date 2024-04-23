@@ -5,29 +5,43 @@ namespace app\library;
 
 use app\database\models\User;
 
+
 class Authenticate
 {
-    public function authGoogle($dataClass)
+    public function authGoogle($data)
     {
         $user = new User;
-        $userFound = $user->findBy('email', $dataClass->email);
-        if(!$userFound){
+        $userFound = $user->findBy('email', $data->email);
+        if (!$userFound) {
             $user->insert([
-                'firstName'=>$dataClass->givenName,
-                'lastName'=>$dataClass->familyName,
-                'email'=>$dataClass->email,
-                'avatar'=>$dataClass->picture,
+                'firstName' => $data->givenName,
+                'lastName' => $data->familyName,
+                'email' => $data->email,
+                'avatar' => $data->picture,
+            ]);
+        }
+
+        $_SESSION['user'] = $userFound;
+        $_SESSION['auth'] = true;
+        header('Location:/');
+    }
+
+
+    public function auth($userData)
+    {
+        $user = new User;
+        $userFound = $user->findBy('email', $userData->email);
+        if(!$userData){
+            $user->insert([
+                'nome'=>$userData,
+                'email'=>$userData,
+                'senha'=>$userData,
             ]);
         }
 
         $_SESSION['user'] = $userFound;
         $_SESSION['auth'] = true;
         header('location:/');
-    }
-
-    public function auth()
-    {
-
     }
 
     public function logout()
